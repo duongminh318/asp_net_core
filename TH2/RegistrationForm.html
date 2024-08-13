@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html lang="vi">
+    <html lang="vi">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Đơn Đăng Ký</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Đơn Đăng Ký</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<body>
-    <h1>Đơn Đăng Ký</h1>
-    <p>Vui lòng điền thông tin vào biểu mẫu này</p>
-    <form method="post" action='https://timoday.edu.vn'>
-        <fieldset>
-            <label for="first-name">Nhập Tên Của Bạn:</label>
-            <input id="first-name" name="first-name" type="text" required />
-            
-            <label for="last-name">Nhập Họ Của Bạn:</label>
-            <input id="last-name" name="last-name" type="text" required />
-            
-            <label for="email">Nhập Email Của Bạn:</label>
-            <input id="email" name="email" type="email" required />
-            
-            <label for="new-password">Tạo Mật Khẩu Mới:</label>
-            <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
-        </fieldset>
-        <fieldset>
-            <label for="personal-account">
-                <input id="personal-account" type="radio" name="account-type" class="inline" /> Tài Khoản Cá Nhân
-            </label>
-            
-            <label for="business-account">
-                <input id="business-account" type="radio" name="account-type" class="inline" /> Tài Khoản Doanh Nghiệp
-            </label>
-            
-            <label for="terms-and-conditions">
-                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
-                Tôi chấp nhận <a href="https://www.freecodecamp.org/news/terms-of-service/">các điều khoản và điều kiện</a>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="profile-picture">Tải Lên Hình Ảnh Hồ Sơ:</label>
-            <input id="profile-picture" type="file" name="profile-picture" />
-            
-            <label for="age">Nhập Tuổi Của Bạn (năm):</label>
-            <input id="age" type="number" name="age" min="13" max="120" />
-            
-            <label for="referrer">Bạn đã nghe về chúng tôi như thế nào?</label>
-            <select id="referrer" name="referrer">
-                <option value="">(chọn một)</option>
-                <option value="1">Kênh timoday trên Facebook</option>
-                <option value="2">Kênh timoday trên YouTube</option>
-                <option value="3">Diễn đàn hỏi đáp timoday</option>
-                <option value="4">Khác</option>
-            </select>
-            
-            <label for="bio">Cung Cấp Một Mô Tả Ngắn:</label>
-            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Tôi thích lập trình trên bãi biển..."></textarea>
-        </fieldset>
-        <input type="submit" value="Gửi" />
-    </form>
-</body>
+    <body>
+        <h1>Đơn Đăng Ký</h1>
+        <p>Vui lòng điền thông tin vào biểu mẫu này</p>
+        <form method="post" action='https://timoday.edu.vn'>
+            <fieldset>
+                <label for="first-name">Nhập Tên Của Bạn:</label>
+                <input id="first-name" name="first-name" type="text" required />
+                
+                <label for="last-name">Nhập Họ Của Bạn:</label>
+                <input id="last-name" name="last-name" type="text" required />
+                
+                <label for="email">Nhập Email Của Bạn:</label>
+                <input id="email" name="email" type="email" required />
+                
+                <label for="new-password">Tạo Mật Khẩu Mới:</label>
+                <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
+            </fieldset>
+            <fieldset>
+                <label for="personal-account">
+                    <input id="personal-account" type="radio" name="account-type" class="inline" /> Tài Khoản Cá Nhân
+                </label>
+                
+                <label for="business-account">
+                    <input id="business-account" type="radio" name="account-type" class="inline" /> Tài Khoản Doanh Nghiệp
+                </label>
+                
+                <label for="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
+                    Tôi chấp nhận <a href="https://www.freecodecamp.org/news/terms-of-service/">các điều khoản và điều kiện</a>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Tải Lên Hình Ảnh Hồ Sơ:</label>
+                <input id="profile-picture" type="file" name="profile-picture" />
+                
+                <label for="age">Nhập Tuổi Của Bạn (năm):</label>
+                <input id="age" type="number" name="age" min="13" max="120" />
+                
+                <label for="referrer">Bạn đã nghe về chúng tôi như thế nào?</label>
+                <select id="referrer" name="referrer">
+                    <option value="">(chọn một)</option>
+                    <option value="1">Kênh timoday trên Facebook</option>
+                    <option value="2">Kênh timoday trên YouTube</option>
+                    <option value="3">Diễn đàn hỏi đáp timoday</option>
+                    <option value="4">Khác</option>
+                </select>
+                
+                <label for="bio">Cung Cấp Một Mô Tả Ngắn:</label>
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Tôi thích lập trình trên bãi biển..."></textarea>
+            </fieldset>
+            <input type="submit" value="Gửi" />
+        </form>
+    </body>
 
-</html>
+    </html>
